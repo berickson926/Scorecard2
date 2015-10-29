@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.berickson.scorecard.gamesetup.PlayerSelectFragment">
+
+    <TextView
+            android:id="@+id/player_select_textview"
+            android:text="@string/select_players"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp" android:layout_centerVertical="true" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" android:layout_marginLeft="43dp" android:layout_marginStart="43dp"/>
+    <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/number_picker"
+            android:descendantFocusability="blocksDescendants"
+            android:layout_centerVertical="true" android:layout_toRightOf="@+id/player_select_textview"
+            android:layout_toEndOf="@+id/player_select_textview"/>
+
+    <Button
+            android:id="@+id/next_button"
+            android:text="@string/next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+</RelativeLayout>
